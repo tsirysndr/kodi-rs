@@ -5,9 +5,9 @@ pub struct AddonsService {
 }
 
 impl AddonsService {
-  pub fn new(client: *const Client) -> Self {
+  pub fn new(client: &Client) -> Self {
     Self {
-      client: unsafe { (*client).clone() },
+      client: client.clone(),
     }
   }
 }

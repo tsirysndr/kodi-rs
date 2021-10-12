@@ -5,9 +5,9 @@ pub struct AudioLibraryService {
 }
 
 impl AudioLibraryService {
-  pub fn new(client: *const Client) -> Self {
+  pub fn new(client: &Client) -> Self {
     Self {
-      client: unsafe { client.as_ref().unwrap().clone() },
+      client: client.clone(),
     }
   }
 }
