@@ -5,9 +5,13 @@ pub struct FavouritesService {
 }
 
 impl FavouritesService {
-  pub fn new(client: *const Client) -> Self {
+  pub fn new(client: &Client) -> Self {
     Self {
-      client: unsafe { (*client).clone() },
+      client: client.clone(),
     }
   }
+
+  pub fn add_favourite(&self) {}
+
+  pub fn get_favourites(&self) {}
 }

@@ -10,4 +10,8 @@ impl TexturesService {
       client: client.clone(),
     }
   }
+
+  pub fn get_textures(&self) {}
+
+  pub fn remove_texture(&self) {}
 }

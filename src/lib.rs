@@ -5,6 +5,7 @@ pub mod favourites;
 pub mod files;
 pub mod gui;
 pub mod input;
+pub mod jsonrpc;
 pub mod player;
 pub mod playlist;
 pub mod pvr;
@@ -27,6 +28,7 @@ pub struct Kodi {
   pub files: files::FilesService,
   pub gui: gui::GuiService,
   pub input: input::InputService,
+  pub jsonrpc: jsonrpc::JsonRpcService,
   pub player: player::PlayerService,
   pub playlist: playlist::PlaylistService,
   pub pvr: pvr::PvrService,
@@ -52,6 +54,7 @@ impl Kodi {
       files: files::FilesService::new(&client),
       gui: gui::GuiService::new(&client),
       input: input::InputService::new(&client),
+      jsonrpc: jsonrpc::JsonRpcService::new(&client),
       player: player::PlayerService::new(&client),
       playlist: playlist::PlaylistService::new(&client),
       pvr: pvr::PvrService::new(&client),

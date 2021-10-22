@@ -10,4 +10,16 @@ impl SystemService {
       client: client.clone(),
     }
   }
+
+  pub fn eject_optical_drive(&self) {}
+
+  pub fn get_properties(&self) {}
+
+  pub fn hibernate(&self) {}
+
+  pub fn reboot(&self) {}
+
+  pub fn shutdown(&self) {}
+
+  pub fn suspend(&self) {}
 }

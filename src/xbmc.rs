@@ -7,7 +7,11 @@ pub struct XbmcService {
 impl XbmcService {
   pub fn new(client: &Client) -> Self {
     Self {
-      client: client.clone() ,
+      client: client.clone(),
     }
   }
+
+  pub fn get_info_booleans(&self) {}
+
+  pub fn get_info_labels(&self) {}
 }

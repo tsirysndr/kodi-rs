@@ -10,4 +10,16 @@ impl FilesService {
       client: client.clone(),
     }
   }
+
+  pub fn download(&self) {}
+
+  pub fn get_directory(&self) {}
+
+  pub fn get_file_details(&self) {}
+
+  pub fn get_sources(&self) {}
+
+  pub fn prepare_download(&self) {}
+
+  pub fn set_file_details(&self) {}
 }

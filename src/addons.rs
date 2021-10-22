@@ -10,4 +10,12 @@ impl AddonsService {
       client: client.clone(),
     }
   }
+
+  pub fn execute_addon(&self) {}
+
+  pub fn get_addon_details(&self) {}
+
+  pub fn get_addons(&self) {}
+
+  pub fn set_addon_enabled(&self) {}
 }

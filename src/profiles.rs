@@ -10,4 +10,10 @@ impl ProfilesService {
       client: client.clone(),
     }
   }
+
+  pub fn get_current_profile(&self) {}
+
+  pub fn get_profiles(&self) {}
+
+  pub fn load_profile(&self) {}
 }
